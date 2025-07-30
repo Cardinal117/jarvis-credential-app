@@ -27,4 +27,8 @@ router.put("/users/:userId/role", auth, userController.changeRole);
 router.get("/ous", auth, ouController.getOUs);
 router.get("/divisions", auth, divisionController.getDivisions);
 
+// Get ou's and divisions for registration page selection options.
+router.get("/ous-register", userController.getAllOUs);
+router.get("/divisions-register", userController.getAllDivisions);
+
 module.exports = router;

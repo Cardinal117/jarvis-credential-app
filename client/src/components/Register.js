@@ -18,14 +18,14 @@ function Register() {
     // Fetch OUs and Divisions, for displays as 
     // options to select from.
     axios
-      .get(`${API_BASE}/api/ous`)
+      .get(`${API_BASE}/api/ous-register`)
       .then(({ data }) => setOus(data))
       .catch((err) =>
         toast.error("Failed to fetch OUs, sir.", { position: "top-right" })
       );
 
     axios
-      .get(`${API_BASE}/api/divisions`)
+      .get(`${API_BASE}/api/divisions-register`)
       .then(({ data }) => setDivisions(data))
       .catch((err) =>
         toast.error("Failed to fetch divisions, sir.", {
