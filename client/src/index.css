@@ -1,0 +1,358 @@
+/* Import custom font. */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+/* Body & Containers */
+body {
+  background: linear-gradient(
+    135deg,
+    #1c2526 60%,
+    #c8102e 100%
+  );
+  min-height: 100vh;
+  font-family: "Orbitron", "Segoe UI", Arial, sans-serif;
+  color: #ffd700;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container to center elements. */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  min-height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 6vh auto;
+  background: rgba(28, 37, 38, 0.92);
+  border: 1.5px solid #ffd700;
+  border-radius: 18px;
+  box-shadow: 0 0 24px rgba(200, 16, 46, 0.6);
+}
+
+/* Smaller container for login/register page. */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  margin: 4rem auto;
+  max-width: 400px;
+  background: rgba(28, 37, 38, 0.92);
+  border: 1.5px solid #ffd700;
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(200, 16, 46, 0.6);
+}
+
+/* Input Table Styles. */
+.input-table {
+  background: #1c2526;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(200, 16, 46, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ffd700;
+}
+
+.input-table label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #c8102e;
+  text-shadow: 0 0 5px rgba(200, 16, 46, 0.5);
+}
+
+.input-table input,
+.input-table select,
+.input-table textarea {
+  width: 100%;
+  max-width: 90%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #ffd700;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #2a3435;
+  color: #ffd700;
+}
+
+.input-table input:focus,
+.input-table select:focus,
+.input-table textarea:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 8px rgba(200, 16, 46, 0.5);
+  outline: none;
+}
+
+/* Table to Display Jobs. */
+.jobs-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  background: #1c2526;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(200, 16, 46, 0.2);
+  margin-bottom: 2rem;
+  border: 1px solid #ffd700;
+}
+
+.jobs-table th,
+.jobs-table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.jobs-table th {
+  background: #c8102e;
+  color: #ffd700;
+  font-weight: 600;
+  border-bottom: 2px solid #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.jobs-table tr:nth-child(even) {
+  background: #2a3435;
+}
+
+.jobs-table tr:nth-child(odd) {
+  background: #1c2526;
+}
+
+.jobs-table tr:hover {
+  background: #3f4a4b;
+  color: #ffd700;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: inset 0 0 10px rgba(200, 16, 46, 0.3);
+}
+
+/* Select Input Options */
+.select-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.2rem;
+}
+
+/* Select box/options styling. */
+select {
+  background: #c8102e; /* Iron Man red */
+  border: 2px solid #ffd700; /* Gold border */
+  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #ffd700; /* Gold text */
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  user-select: none;
+}
+
+select.selected,
+select:active {
+  background: #1c2526; /* Dark panel on active */
+  color: #c8102e; /* Red text */
+  border-color: #c8102e; /* Red border */
+}
+
+/* Label styling. */
+label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #c8102e; /* Iron Man red labels */
+  text-shadow: 0 0 5px rgba(200, 16, 46, 0.5); /* Subtle red glow */
+}
+
+/* Badge for the word ADMIN 
+(makes admin users feel special to boost morale) */
+.admin-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #ffd700 60%, #c8102e 100%);
+  color: #1c2526;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.3em 1em;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4), 0 0 8px rgba(200, 16, 46, 0.2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.unique-label {
+  display: "block"!important;
+  text-align: "center"!important;
+  font-size: "1.3em"!important;
+  font-weight: "bold"!important;
+  margin-bottom: "8px"!important;
+}
+
+input {
+  width: 100%;
+  max-width: 90%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1.5px solid #ffd700;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #2a3435;
+  color: #ffd700;
+}
+
+input:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 8px rgba(200, 16, 46, 0.5);
+  outline: none;
+}
+
+/* Checkbox Styles. */
+.checkbox {
+  accent-color: #c8102e;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #ffd700;
+  border-radius: 4px;
+  background: #2a3435;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.checkbox:focus {
+  box-shadow: 0 0 0 2px #c8102e;
+}
+
+.checkbox:checked {
+  border-color: #ffd700;
+  background: #c8102e;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* Admin button. */
+.admin-button {
+  background: linear-gradient(90deg, #ffd700 60%, #c8102e 100%);
+  color: #1c2526;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0.6em 1.8em;
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5), 0 0 10px rgba(200, 16, 46, 0.2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.5);
+}
+
+.add-button:hover,
+.add-button:focus {
+  background: linear-gradient(90deg, #c8102e 60%, #ffd700 100%);
+  color: #ffd700;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.5);
+  outline: none;
+}
+
+.admin-button:hover,
+.admin-button:focus {
+  background: linear-gradient(90deg, #c8102e 60%, #ffd700 100%);
+  color: #ffd700;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 0 16px rgba(255, 215, 0, 0.7), 0 0 12px rgba(200, 16, 46, 0.3);
+  outline: none;
+}
+
+/* Add Button. */
+.add-button {
+  background: linear-gradient(90deg, #00e676 60%, #ffd600 100%);
+  color: #1c2526;
+  border: none;
+  border-radius: 12px;
+  padding: 0.6em 1.4em;
+  font-size: 1.08em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  margin-top: 8px;
+  box-shadow: 0 2px 12px rgba(0, 230, 118, 0.25), 0 0 8px rgba(255, 214, 0, 0.18);
+  transition: background 0.2s, color 0.2s, transform 0.1s, box-shadow 0.2s;
+  text-shadow: 0 0 6px #ffd600, 0 0 2px #00e676;
+}
+
+.add-button:hover,
+.add-button:focus {
+  background: linear-gradient(90deg, #ffd600 60%, #00e676 100%);
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 6px 18px rgba(0, 230, 118, 0.35), 0 0 12px rgba(255, 214, 0, 0.28);
+  outline: none;
+}
+
+/* Remove Button. */
+.remove-button {
+  background: linear-gradient(90deg, #8b0000 70%, #ff0000 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 0.7rem;
+  margin-top: 8px;
+  box-shadow: 0 2px 12px rgba(255, 0, 0, 0.4), 0 0 8px rgba(139, 0, 0, 0.25);
+  transition: background 0.2s, color 0.2s, transform 0.1s, box-shadow 0.2s;
+  text-shadow: 0 0 6px #ff0000, 0 0 2px #fff;
+  letter-spacing: 0.05em;
+}
+
+.remove-button:hover,
+.remove-button:focus {
+  background: linear-gradient(90deg, #ff0000 60%, #8b0000 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.5), 0 0 12px rgba(139, 0, 0, 0.3);
+  outline: none;
+  text-shadow: 0 0 10px #ff0000, 0 0 4px #fff;
+}
+
+/* Buttons styling. */
+button {
+  font-family: 'Orbitron';
+  background: #c8102e; /* Iron Man red */
+  color: #ffd700; /* Gold text */
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(200, 16, 46, 0.3); /* Red glow */
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  margin-right: 0.7rem;
+  margin-top: 8px;
+  text-shadow: 0 0 3px rgba(255, 215, 0, 0.5); /* Subtle gold glow */
+}
+
+button:hover,
+button:focus {
+  background: #ffd700; /* Gold on hover */
+  color: #c8102e; /* Red text */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.5); /* Gold glow */
+  outline: none;
+}
