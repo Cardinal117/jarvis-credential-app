@@ -187,14 +187,14 @@ Test the vault’s API endpoints using Postman, like firing repulsors at targets
 
 ## Screenshots
 
-- `/login`: Login page.
-- `/register`: Registration page.
-- `/credentials`: Division dropdown and credential table.
-- `/admin-panel`: User management with OU/division assignments.
-  ![Login Page](screenshots/login.png)
-  ![Registration Page](screenshots/register.png)
-  ![Credentials Page](screenshots/credentials.png)
-  ![Admin Panel](screenshots/admin-panel.png)
+-# `/login`: Login page.
+![Login Page](screenshots/login.png)
+-# `/register`: Registration page.
+![Registration Page](screenshots/register.png)
+-# `/credentials`: Division dropdown and credential table.
+![Credentials Page](screenshots/credentials.png)
+-# `/admin-panel`: User management with OU/division assignments.
+![Admin Panel](screenshots/admin-panel.png)
 
 ## License
 
